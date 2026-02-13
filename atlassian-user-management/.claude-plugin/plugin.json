@@ -3,7 +3,15 @@
   "version": "0.1.0",
   "description": "Automate Atlassian user onboarding and offboarding with YAML-based workflow templates",
   "author": {
-    "name": "Perfect Art"
+    "name": "Nikolay Nikulin",
+    "email": "nikolay.nikulin@perfectart.com"
   },
-  "keywords": ["atlassian", "jira", "confluence", "user-management", "onboarding", "offboarding"]
+  "keywords": [
+    "atlassian",
+    "jira",
+    "confluence",
+    "user-management",
+    "onboarding",
+    "offboarding"
+  ]
 }
