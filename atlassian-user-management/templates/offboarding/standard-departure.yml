@@ -1,0 +1,46 @@
+process_name: Standard Employee Departure
+description: Employee leaving on good terms with 2+ weeks notice
+
+ownership_transfer:
+  jira_issues:
+    assigned: transfer_to_manager
+    watching: keep_subscriptions
+    reported: keep_reporter
+  confluence:
+    owned_pages: transfer_to_manager
+    space_admin: transfer_to_team_lead
+  filters_dashboards:
+    private: archive
+    shared: transfer_ownership
+
+documentation:
+  create_transition_page: true
+  confluence_space: TEAM
+  page_title: "Transition: {{employee_name}}"
+  include:
+    - open_issues
+    - recent_pages
+    - key_contributions
+    - ongoing_projects
+    - contact_info
+
+access_removal:
+  remove_groups: all
+  revoke_projects: all
+  deactivate_account: true
+  timing: scheduled
+  retention_period: 90
+
+notification:
+  notify_manager: true
+  notify_team: true
+  channels:
+    - email
+    - slack
+  message: |
+    {{employee_name}} has left the team as of {{last_day}}.
+
+    Their work has been transferred to {{manager_name}}.
+    Transition document: {{transition_doc_link}}
+
+    Questions? Contact {{manager_name}}.

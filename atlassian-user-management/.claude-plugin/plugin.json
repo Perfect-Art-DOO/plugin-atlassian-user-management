@@ -1,0 +1,9 @@
+{
+  "name": "atlassian-user-management",
+  "version": "0.1.0",
+  "description": "Automate Atlassian user onboarding and offboarding with YAML-based workflow templates",
+  "author": {
+    "name": "Perfect Art"
+  },
+  "keywords": ["atlassian", "jira", "confluence", "user-management", "onboarding", "offboarding"]
+}

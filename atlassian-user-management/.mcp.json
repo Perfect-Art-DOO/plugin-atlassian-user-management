@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "atlassian-admin": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-server/atlassian-admin-server.js"],
+      "env": {
+        "ATLASSIAN_API_EMAIL": "${ATLASSIAN_API_EMAIL}",
+        "ATLASSIAN_API_TOKEN": "${ATLASSIAN_API_TOKEN}",
+        "ATLASSIAN_CLOUD_ID": "${ATLASSIAN_CLOUD_ID}"
+      },
+      "description": "Extends the Atlassian MCP server with Admin API capabilities for user management"
+    }
+  }
+}

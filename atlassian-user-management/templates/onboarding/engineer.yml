@@ -1,0 +1,41 @@
+role: Software Engineer
+description: Full-stack developer with access to engineering projects and documentation
+
+groups:
+  - jira-software-users
+  - confluence-users
+  - developers
+  - engineering-team
+
+projects:
+  - key: ENG
+    role: Developer
+    description: Main engineering project
+  - key: DOCS
+    role: Contributor
+    description: Technical documentation
+
+confluence_spaces:
+  - key: TEAM
+    permission: write
+    description: Team wiki and meeting notes
+  - key: DOCS
+    permission: write
+    description: Technical documentation
+
+notification:
+  send: true
+  template: welcome-engineer
+  channels:
+    - email
+  message: |
+    Welcome {{name}} to the Engineering team! 🎉
+
+    Your Atlassian accounts are ready:
+    - Jira: Access to ENG project
+    - Confluence: Write access to Team and Docs spaces
+
+    Next steps:
+    1. Complete security training
+    2. Set up development environment
+    3. Review the onboarding checklist in Confluence
